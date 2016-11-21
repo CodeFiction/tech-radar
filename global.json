@@ -1,0 +1,6 @@
+{
+    "projects": [
+        "dotnetapi/Webapi",
+        "dotnetapi/tests"
+    ]
+}
