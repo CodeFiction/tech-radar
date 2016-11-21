@@ -1,4 +1,4 @@
-module.exports = function(grunt) {
+module.exports = function (grunt) {
     grunt.initConfig({
         exec: {
             build_source: {
@@ -17,22 +17,24 @@ module.exports = function(grunt) {
                 cmd: 'cd radar-presentation && npm install'
             },
             build_ng: {
-                cmd: 'cd radar-presentation && ng build'
+                cmd: 'cd radar-presentation && ng build',
+                options: {
+                    maxBuffer: 1024 * 1024 * 1024
+                }
             }
         },
-        // copy: {
-        //     main: {
-        //         expand: true,
-        //         src: 'dist/*',
-        //         dest: '../dist/wwwroot/',
-        //     },
-        // },
+        copy: {
+            main: {
+                expand: true,
+                src: 'dist/*',
+                dest: '../dist/wwwroot/',
+            },
+        },
         clean: ['./dist/']
     });
 
     grunt.loadNpmTasks('grunt-exec');
     grunt.loadNpmTasks('grunt-contrib-clean');
-    // grunt.loadNpmTasks('grunt-contrib-copy');
-
+    grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.registerTask('default', ['clean', 'exec', 'copy']);
 };
