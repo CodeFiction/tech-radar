@@ -1,0 +1,23 @@
+{
+  "name": "tech-radar",
+  "version": "1.0.0",
+  "description": "Codefiction tech radar app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Codefiction/tech-radar.git"
+  },
+  "author": "Codefiction Community",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Codefiction/tech-radar/issues"
+  },
+  "homepage": "https://github.com/Codefiction/tech-radar#readme",
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "grunt-exec": "^1.0.1"
+  }
+}
