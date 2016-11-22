@@ -27,7 +27,7 @@ module.exports = function (grunt) {
             main: {
                 expand: true,
                 src: 'dist/*',
-                dest: '../dist/wwwroot/',
+                dest: './dist/wwwroot/',
             },
         },
         clean: ['./dist/']
