@@ -339,3 +339,6 @@ __pycache__/
 
 # Cake - Uncomment if you are using it
 # tools/
+
+# Default MongoDb data path
+/data/db
