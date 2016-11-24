@@ -2,16 +2,16 @@ module.exports = function (grunt) {
     grunt.initConfig({
         exec: {
             build_source: {
-                cmd: 'dotnet restore dotnetapi/WebApi && dotnet build dotnetapi/WebApi'
+                cmd: 'dotnet restore src/WebApi && dotnet build src/WebApi'
             },
             //   build_tests: {
-            //     cmd: 'dotnet restore dotnetapi/tests && dotnet build dotnetapi/tests'
+            //     cmd: 'dotnet restore src/tests && dotnet build src/tests'
             //   },
             //   run_tests: {
-            //     cmd: 'dotnet test dotnetapi/tests'
+            //     cmd: 'dotnet test src/tests'
             //   },
             build_pack: {
-                cmd: 'dotnet publish ./dotnetapi/WebApi -c Release -o ./dist'
+                cmd: 'dotnet publish ./src/WebApi -c Release -o ./dist'
             }
         },
         clean: ['./dist/']
