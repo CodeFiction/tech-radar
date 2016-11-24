@@ -12,29 +12,13 @@ module.exports = function (grunt) {
             //   },
             build_pack: {
                 cmd: 'dotnet publish ./dotnetapi/WebApi -c Release -o ./dist'
-            },
-            npm_install: {
-                cmd: 'cd radar-presentation && npm install'
-            },
-            build_ng: {
-                cmd: 'cd radar-presentation && ng build',
-                options: {
-                    maxBuffer: 1024 * 1024 * 1024
-                }
             }
-        },
-        copy: {
-            main: {
-                expand: true,
-                src: 'dist/*',
-                dest: './dist/wwwroot/',
-            },
         },
         clean: ['./dist/']
     });
 
     grunt.loadNpmTasks('grunt-exec');
     grunt.loadNpmTasks('grunt-contrib-clean');
-    grunt.loadNpmTasks('grunt-contrib-copy');
-    grunt.registerTask('default', ['clean', 'exec', 'copy']);
+
+    grunt.registerTask('default', ['clean', 'exec']);
 };
