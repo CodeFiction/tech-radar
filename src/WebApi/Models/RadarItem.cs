@@ -4,7 +4,7 @@ using MongoDB.Bson.Serialization.Attributes;
 
 namespace Codefiction.TechRadar.Models
 {  
-    internal class RadarItem
+    public class RadarItem
     {    
         [BsonId]
         public ObjectId ObjectId { get; set; }
