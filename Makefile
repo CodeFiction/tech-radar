@@ -4,4 +4,4 @@ build:
     build_angular
 
 build_dotnet:
-    cd dotnetapi && dotnet build
+    cd src\Codefiction.TechRadar && dotnet build
