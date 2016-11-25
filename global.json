@@ -1,6 +1,6 @@
 {
     "projects": [
-        "src/Codefiction.TechRadar",
-        "test/Codefiction.TechRadar.Tests"
+        "src",
+        "test"
     ]
 }
