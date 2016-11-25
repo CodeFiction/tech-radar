@@ -8,5 +8,5 @@ matrix:
       dotnet: 1.0.0-preview2-003121
 
 script:
-  - dotnet restore src/WebApi && dotnet build src/WebApi
-  - dotnet publish ./src/WebApi -c Release -o ./dist
+  - dotnet restore src/Codefiction.TechRadar && dotnet build src/Codefiction.TechRadar
+  - dotnet publish ./src/Codefiction.TechRadar -c Release -o ./dist
