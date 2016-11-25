@@ -1,0 +1,12 @@
+language: csharp
+
+matrix:
+  include:
+    - os: linux # Ubuntu 14.04
+      dist: trusty
+      sudo: required
+      dotnet: 1.0.0-preview2-003121
+
+script:
+  - dotnet restore src/WebApi && dotnet build src/WebApi
+  - dotnet publish ./src/WebApi -c Release -o ./dist
