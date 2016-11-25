@@ -1,6 +1,6 @@
 {
     "projects": [
-        "src/Webapi",
         "src/tests"
+        "src/Codefiction.TechRadar",
     ]
 }

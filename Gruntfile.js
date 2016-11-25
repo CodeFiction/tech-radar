@@ -2,7 +2,7 @@ module.exports = function (grunt) {
     grunt.initConfig({
         exec: {
             build_source: {
-                cmd: 'dotnet restore src/WebApi && dotnet build src/WebApi'
+                cmd: 'dotnet restore src/Codefiction.TechRadar && dotnet build src/Codefiction.TechRadar'
             },
             //   build_tests: {
             //     cmd: 'dotnet restore src/tests && dotnet build src/tests'
@@ -11,7 +11,7 @@ module.exports = function (grunt) {
             //     cmd: 'dotnet test src/tests'
             //   },
             build_pack: {
-                cmd: 'dotnet publish ./src/WebApi -c Release -o ./dist'
+                cmd: 'dotnet publish ./src/Codefiction.TechRadar -c Release -o ./dist'
             }
         },
         clean: ['./dist/']
